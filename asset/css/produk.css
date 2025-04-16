@@ -1,0 +1,267 @@
+
+
+/* bagian navbar */
+
+.navbar {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: -webkit-sticky; /* Untuk browser yang lebih lama */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Untuk memastikan navbar di atas konten lainnya */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #04b2f2;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(6, 159, 255, 0.979);
+}
+
+.navbar-toggler {
+    border-color: rgba(14, 1, 1, 0.1);
+    color: #140707; /* Ensure the toggle icon is visible */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+/* Custom CSS for the cart page */
+/* Custom CSS for the cart page */
+.cart-container {
+    margin-top: 50px;
+    
+}
+
+.cart-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    height: 100%; /* Ensure card expands to full height */
+}
+
+.cart-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-card .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px; /* Adjusted height for better image display */
+    object-fit: cover;
+}
+
+.cart-card .card-body {
+    padding: 20px;
+}
+
+.cart-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.cart-card .card-text {
+    color: #666;
+    font-size: 1rem;
+}
+
+.cart-card .btn-delete {
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.cart-card .btn-delete:hover {
+    background-color: #c82333;
+}
+
+.btn-shop,
+.btn-checkout {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-shop {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+}
+
+.btn-shop:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+}
+
+.btn-checkout {
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: #fff;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+.btn-checkout:hover {
+    background: linear-gradient(90deg, #218838, #28a745);
+}
+
+.total-price {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cart-card .card-img-top {
+        height: 200px; /* Adjusted height for smaller screens */
+    }
+}
+
+
+
+/* CHECKOUT */
+
+/* Checkout Page Styles */
+.checkout-container {
+    background: linear-gradient(to right, #4e73df, #224abe);
+    color: black;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.checkout-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-input,
+.checkout-select {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+.checkout-input:focus,
+.checkout-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.checkout-btn {
+    background-color: #4e73df;
+    border-color: #4e73df;
+    color: #ffffff;
+}
+
+.checkout-btn:hover {
+    background-color: #224abe;
+    border-color: #224abe;
+}
+
+.checkout-list {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-item {
+    border: none;
+    justify-content: space-between;
+}
+
+.checkout-item-name {
+    font-weight: bold;
+}
+
+.checkout-item-price {
+    font-weight: bold;
+}
+
+.checkout-total {
+    background-color: #f1f3f5;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.checkout-total-label {
+    color: #495057;
+}
+
+.checkout-total-value {
+    color: #343a40;
+}
+
+.checkout-shipping,
+.checkout-grand-total {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.checkout-shipping-label,
+.checkout-grand-total-label {
+    color: #495057;
+}
+
+.checkout-shipping-value,
+.checkout-grand-total-value {
+    font-weight: bold;
+    color: #343a40;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 20px;
+    }
+}

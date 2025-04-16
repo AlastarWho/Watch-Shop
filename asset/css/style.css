@@ -1,0 +1,501 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* css untuk bagian form */
+
+
+.body-form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container-login {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container-login:hover {
+    transform: translateY(-10px);
+}
+
+.container-register {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container-register:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.input-login, .input-register {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input-login:focus, .input-register:focus {
+    background: rgba(255, 255, 255, 0.4);
+    outline: none;
+}
+
+.button-login, .button-register {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.button-login:hover, .button-register:hover {
+    background-color: #45a049;
+}
+
+.link-login, .link-register {
+    display: block;
+    margin-top: 20px;
+    color: #00c6ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.link-login:hover, .link-register:hover {
+    color: #0f9b8e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container-login, .container-register {
+        padding: 20px;
+    }
+
+    .input-login, .input-register, .button-login, .button-register {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .link-login, .link-register {
+        font-size: 12px;
+    }
+}
+
+/* bagian navbar */
+.navbar {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: -webkit-sticky; /* Untuk browser yang lebih lama */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Untuk memastikan navbar di atas konten lainnya */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #04b2f2;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(6, 159, 255, 0.979);
+}
+
+.navbar-toggler {
+    border-color: rgba(14, 1, 1, 0.1);
+    color: #140707; /* Ensure the toggle icon is visible */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+/* bagian tentang */
+
+.service_section {
+    background: linear-gradient(to right, #007bff, #0062cc);
+    color: #fff;
+    padding: 80px 0;
+}
+
+.service_section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service_section p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.service_container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.service_container .item {
+    width: 300px;
+    margin: 0 15px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.service_container .item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.service_container .item .icon {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.service_container .item h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service_container .item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .service_container .item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Testimoni Section */
+.testimoni_section {
+    padding: 50px 0;
+    background: linear-gradient(to right, #000000, #0a2c58, #07adf4);
+    color: #fff;
+    text-align: center;
+}
+
+.testimoni_section .heading_container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.testimoni_section .heading_container hr {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-color: white;
+}
+
+.testimonial-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-box:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.testimonial-box h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #04b2f2;
+}
+
+@media (max-width: 768px) {
+    .testimonial-box {
+        margin: 10px 0;
+    }
+
+    .testimoni_section .heading_container h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* Footer */
+.footer {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center; /* Mengatur teks ke tengah */
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li i {
+    margin-right: 10px;
+    color: #fff; /* Warna putih untuk ikon */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #04b2f2; /* Warna biru untuk efek hover */
+}
+
+@media (max-width: 768px) {
+    .footer .col-lg-4 {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* bagian product */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%; /* Ensure the image takes the full width */
+}
+
+.product-card .card-body {
+    padding: 20px;
+}
+
+.product-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.product-card .card-text {
+    color: #666;
+    font-size: 1rem;
+}
+
+.product-card .btn-details {
+    margin-top: 10px;
+}
+
+.product-card .btn-add-to-cart {
+    margin-top: 10px;
+}
+
+/* Make product cards responsive */
+@media (max-width: 1200px) {
+    .product-card .card-title {
+        font-size: 1.15rem;
+    }
+
+    .product-card .card-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .product-card .card-title {
+        font-size: 1.1rem;
+    }
+
+    .product-card .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card .card-title {
+        font-size: 1.05rem;
+    }
+
+    .product-card .card-text {
+        font-size: 0.85rem;
+    }
+
+    .product-card .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card .card-title {
+        font-size: 1rem;
+    }
+
+    .product-card .card-text {
+        font-size: 0.8rem;
+    }
+
+    .product-card .card-img-top {
+        height: 160px;
+    }
+}
+
+.modal-header {
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+}
+
+.modal-body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+}
+
+.close {
+    color: white;
+    opacity: 1;
+}
+
+
+/* bagian video  */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (1920x1080) */
+}
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+/* bagian gambar carrousel  */
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}

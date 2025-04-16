@@ -1,0 +1,20 @@
+Lisensi MIT
+
+Hak Cipta (c) 2024 Asep Sandy Ramadhan
+
+Izin dengan ini diberikan, secara gratis, kepada siapa pun yang memperoleh salinan
+perangkat lunak ini dan file dokumentasi terkait (selanjutnya disebut "Perangkat Lunak"),
+untuk menggunakan, menyalin, memodifikasi, menggabungkan, menerbitkan, mendistribusikan,
+mengalihkan sublicensi, dan/atau menjual salinan dari Perangkat Lunak, serta untuk
+memperbolehkan orang lain yang dilengkapi Perangkat Lunak ini, sesuai dengan syarat-syarat
+sebagai berikut:
+
+Pemberitahuan hak cipta di atas dan izin ini harus disertakan dalam semua salinan atau
+bagian yang substansial dari Perangkat Lunak.
+
+PERANGKAT LUNAK INI DISEDIAKAN "SEBAGAIMANA ADANYA", TANPA JAMINAN APA PUN, BAIK
+DINYATAKAN MAUPUN DILIMPAHKAN, TERMASUK TAPI TIDAK TERBATAS PADA JAMINAN PERDAGANGAN,
+KESESUAIAN UNTUK TUJUAN TERTENTU, DAN TIDAK MELANGGAR HAK PIHAK KETIGA. DI TIDAK ADA
+KEJADIAN, PENULIS ATAU PEMEGANG HAK CIPTA TIDAK BERTANGGUNG JAWAB UNTUK KLAIM, KERUSAKAN,
+ATAU LIABILITAS LAINNYA, APA PUN AKIBAT ATAU KAITANNYA DENGAN PERANGKAT LUNAK ATAU
+PENGGUNAAN ATAU TRANSAKSI LAIN DALAM PERANGKAT LUNAK.
