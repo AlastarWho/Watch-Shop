@@ -49,7 +49,7 @@
 - _Login Multi Role (Admin & User)_
 - _Manajemen Produk Jam Tangan_
 - _Halaman Admin dan User terpisah_
-- _Keranjang Belanja (jika tersedia)_
+- _Keranjang Belanja _
 - _Tampilan responsive & modern_
 
 ---
